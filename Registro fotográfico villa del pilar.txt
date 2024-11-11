@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Imágenes</title>
+    <style>
+        body {
+            background-color: #F3ECE3;
+            color: #3E312E;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: bold;
+            color: #3E312E;
+            text-align: center;
+            margin-bottom: 25px;
+            padding: 10px 20px;
+            border-bottom: 3px solid #A68A64;
+        }
+
+        #contenedor {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            max-width: 1000px;
+        }
+
+        .fila {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        details {
+            background-color: #A68A64;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+            width: 180px;
+            padding: 10px;
+            transition: transform 0.2s ease, background-color 0.3s ease;
+            text-align: center;
+            color: #F3ECE3;
+        }
+
+        details:hover {
+            background-color: #8C7356;
+            transform: scale(1.05);
+        }
+
+        summary {
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            outline: none;
+        }
+
+        img {
+            width: 150px;
+            height: 100px;
+            margin-top: 5px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+            border: 2px solid #3E312E;
+        }
+
+        img:active {
+            animation: color 3s linear infinite;
+        }
+
+        p {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        @keyframes color {
+            0% { border-top-color: green; border-right-color: blue; border-bottom-color: purple; border-left-color: red; }
+            25% { border-top-color: red; border-right-color: green; border-bottom-color: blue; border-left-color: purple; }
+            50% { border-top-color: purple; border-right-color: red; border-bottom-color: green; border-left-color: blue; }
+            75% { border-top-color: blue; border-right-color: purple; border-bottom-color: red; border-left-color: green; }
+            100% { border-top-color: green; border-right-color: blue; border-bottom-color: purple; border-left-color: red; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Registro Fotográfico</h1>
+    <div id="contenedor">
+        <div class="fila">
+            <details>
+                <summary>
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiufsxn8qgtFlEQBo8QR2A7kPIQbNJVW_C8ZorBCNkaNFn2-gjqzYcUEhwF0M__yIgmXUqvlCKS2NxGiYCS-HTiEdxNiDea-1AFNvA6jbY693uW52lhFRhOSE4Btg9mGJVtkdo9xgT43-PzsJut4Gc7YbJPTsyylIT-oTeXfyWZfApeDJ2ypJA69Dl_Mpo/s1600/logo%20villa%20del%20pilar.jpg" alt="Cafe listo para despulpar">
+                </summary>
+                <p>Este café esta listo para ser despulpado.</p>
+            </details>
+
+            <details>
+                <summary>
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSIZjyUy1B0K2d-Yemhja3xytCUqobJDsYa0AVF88qfQcVUQucELHlo8D7aYn3AXkdhAdlPduOXrEYHkjWcO_g2zy8BQ8uVW4E0dA3ZfJfpTShG9uA3q2FfvZIhOaV4rw6kFjEoLU3FyIz-BotiafrdDOEOVBXF7FiX_oNa63UeqlnZihm6YvARtKvMdQ/s1600/5.jpg" alt="listo para trillar">
+                </summary>
+                <p>En este punto observamos un café listo para trillar.</p></p>
+            </details>
+        </div>
+        
+        <div class="fila">
+            <details>
+                <summary>
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjhfTJrMNgongHrr0HEmcXttIv4tvkDor29ivcLM0N7aY1foaTpU5LsjsN1j68DbijMb1N7CD8Iu7qPHhgFtYKiQ7XsdMqMGruw8OvDZoTvCoQV-nwUx3HH4v9Te0NhxACHA1waKVY8hxlNTOLonvtOwHvkpPElEdeKadQYfoSWoCeBowxYu8Znj_t5OjA/s1600/6.jpg" alt="Procesp de trillado manualmente">
+                </summary>
+                <p>Aqui observamos el proceso de trillado realizado manualmente.</p>
+            </details>
+
+            <details>
+                <summary>
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj505QAcwD0p6OghWrHjgCPPtapeh_SXGTBYkknN8oL6Jc6uwlMh5Yx2o5ODUZq1AxDx115-QlaiPojeRtznrAHnX89Kx70ycc1NI87E8V9AskBHdFNIPfcys0jIN2zmBzHas0SdHkiZE3VZSBbo2Q_jBVEMltPslh42QZItG5tYBbRU0k9EGt9z6zxR1s/s1600/3.jpg" alt="Listo para moler">
+                </summary>
+                <p>En ente punto el café ya esta listo para ser molido.</p>
+            </details>
+        </div>
+
+        <div class="fila">
+            <details>
+                <summary>
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjnSj7KOiEilbs-tHvTrfeIHPNOWtmwcN6G3J3wH2u3-1D2-66VT_cFQbgKHChAbhMGIaJTdnrCVx9Pr2VPyou7F002HCULXD8MNuld4S6nZx5lKMoHg487YHFv8R9awFJUdGKnNv4qKlTIk50Qz7VdgH39IIwr8FRBPS1G1R8-SKVi7MmdyyNOuv5wR1Q/s1600/1.jpg" alt="Listo para el consumo">
+                </summary>
+                <p>Por ultimo, el café esta siendo molido para quedar listo para preparar y consumir.</p>
+            </details>
+        </div>
+    </body>
+</html>
